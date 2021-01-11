@@ -6,6 +6,10 @@ public class Customer {
     private int id;
     private String name;
     private double cashOnHand;
+    public Customer(String name, double cashOnHand) {
+        this.name = name;
+        this.cashOnHand = cashOnHand;
+    }
 
     //Getters and Setters
 
@@ -21,7 +25,7 @@ public class Customer {
         this.name = name;
     }
 
-    public double getCashOnHand(){
+    public void getCashOnHand(){
         this.cashOnHand = cashOnHand;
     }
 
@@ -30,6 +34,6 @@ public class Customer {
     }
 
     public void buySnacks(double TotalCost){
-        this.cashOnHand = cashOnHand - totalCost;
+        this.cashOnHand = cashOnHand - TotalCost;
     }
 }

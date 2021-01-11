@@ -55,11 +55,11 @@ public class Snack {
     }
 
     public void addQuantity(int quantity){
-        this.quantity = quantity += quantity;
+        this.quantity = this.quantity + quantity;
     }
 
-    public void buySnack(int quantity) {
-        this.quantity = quantity - quantity;
+    public void reduceQuantity( int quantity ) {
+        this.quantity = this.quantity - quantity;
     }
 
     public double getTotalCost(int quantity){
